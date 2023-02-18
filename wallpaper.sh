@@ -10,6 +10,6 @@ else
         file=$(ls $dir | sed -n $(echo $index)p) #get file name of index
         path=$(echo $dir/$file) #get absolute path to picture
         gsettings set $(echo org.gnome.desktop.background picture-uri-dark file:////$path) #change wallpaper
-        echo $(date) $file >> $dir/wallpaper_of_the_day.txt #write log to file
+        echo $(date) $file >> $dir/../wallpaper_of_the_day.txt #write log to file
 fi
 
